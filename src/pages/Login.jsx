@@ -44,7 +44,7 @@ const [password, setPassword] = useState("");
       <p  onClick={() => navigate("/auth")} style={{color:"blue",fontSize:"4vw", display:"inline"}}> Sign Up </p>
       </p>
    
-       <button onClick={handleLogin} style={{width:"30%", height:"3.5vh", alignItems:"center",borderRadius:"20vh", backgroundColor:"blue", color:"white", fontSize: fontSize + "px"}}  >Login</button>
+       <button onClick={handleLogin} style={{width:"30%", height:"4vh", alignItems:"center",borderRadius:"20vh", backgroundColor:"blue", color:"white", fontSize: fontSize + "px"}}  >Login</button>
       </center>
     </div>
   );
