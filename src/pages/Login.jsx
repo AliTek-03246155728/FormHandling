@@ -36,15 +36,15 @@ const [password, setPassword] = useState("");
     <div>
          <center>
        <h2>Login</h2>
-     <p style={{fontSize:"2vw"}}> Enter your Email here: </p> <input type="email"  placeholder="....@gmail.com" onChange={(e) => setEmail(e.target.value)} style={{fontSize:"2vw"}} />
+     <p style={{fontSize:"3vw"}}> Enter your Email here: </p> <input type="email"  placeholder="....@gmail.com" onChange={(e) => setEmail(e.target.value)} style={{fontSize:"3vw"}} />
       <br />
-     <p style={{fontSize:"2vw"}}> Enter your Password here:</p>
-      <input type="password"  placeholder="123...." onChange={(e) => setPassword(e.target.value)} style={{fontSize:"2vw"}} />
-      <p style={{fontSize:"2vw"}}>  Don't have an account? 
+     <p style={{fontSize:"3vw"}}> Enter your Password here:</p>
+      <input type="password"  placeholder="123...." onChange={(e) => setPassword(e.target.value)} style={{fontSize:"3vw"}} />
+      <p style={{fontSize:"3vw"}}>  Don't have an account? 
       <p  onClick={() => navigate("/auth")} style={{color:"blue",fontSize:"3vw", display:"inline"}}> Sign Up </p>
       </p>
    
-       <button onClick={handleLogin} style={{width:"30%", height:"4vh", alignItems:"center",borderRadius:"20vh", backgroundColor:"blue", color:"white", fontSize: fontSize + "%"}}  >Login</button>
+       <button onClick={handleLogin} style={{width:"30%", height:"4vh", alignItems:"center",borderRadius:"20vh", backgroundColor:"blue", color:"white", fontSize: fontSize + "vw"}}  >Login</button>
       </center>
     </div>
   );
