@@ -13,18 +13,7 @@ const [password, setPassword] = useState("");
 
   navigate("/dashboard");
 };
-  const [fontSize, setFontSize] = useState(30);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth <= 600) {
-        setFontSize(18);
-      } else if (window.innerWidth <= 900) {
-        setFontSize(24);
-      } else {
-        setFontSize(3);
-      }
-    };
+  
 
     handleResize(); // run on load
     window.addEventListener("resize", handleResize);
@@ -44,7 +33,7 @@ const [password, setPassword] = useState("");
       <p  onClick={() => navigate("/auth")} style={{color:"blue",fontSize:"3vw", display:"inline"}}> Sign Up </p>
       </p>
    
-       <button onClick={handleLogin} style={{width:"30%", height:"5vh", alignItems:"center",borderRadius:"20vh", backgroundColor:"blue", color:"white", fontSize: fontSize + "vw"}}  >Login</button>
+       <button onClick={handleLogin} style={{width:"30%", height:"6vh", alignItems:"center",borderRadius:"20vh", backgroundColor:"blue", color:"white", fontSize:"3vw"}}  >Login</button>
       </center>
     </div>
   );
