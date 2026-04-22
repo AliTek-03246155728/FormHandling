@@ -35,27 +35,27 @@ if (!resPass) {
       {mode === "signup" && (
         <div>
           <h2 style={{fontSize:"5vw",color:"purple"}}>Sign Up</h2>
-          <input type="email" placeholder="Email" style={{fontSize:"4vw"}} onChange={(e) => {
+          <input type="email" placeholder="Email" style={{fontSize:"2vw"}} onChange={(e) => {
            setEmail(e.target.value) }} /><br /><br />
-          <input type="password" placeholder="Password" style={{fontSize:"4vw", height:"2.4vh"}} onChange={(e) => setPassword(e.target.value)} /><br /><br />
-          <button onClick={handleSignUp} style={{fontSize:"4vw"}}>
+          <input type="password" placeholder="Password" style={{fontSize:"2vw"}} onChange={(e) => setPassword(e.target.value)} /><br /><br />
+          <button onClick={handleSignUp} style={{fontSize:"3vw"}}>
             Create Account
           </button> <br /><br />
-          <button onClick={() => setMode("forgot")} style={{cursor:"pointer", fontSize:"4vw"}}>
+          <button onClick={() => setMode("forgot")} style={{cursor:"pointer", fontSize:"3vw"}}>
             Forgot Password?
           </button>
           <br /><br />
-          <button onClick={() => navigate("/")} style={{cursor:"pointer", fontSize:"4vw"}}>
+          <button onClick={() => navigate("/")} style={{cursor:"pointer", fontSize:"3vw"}}>
             Back to Login
           </button>
         </div>
       )}
       {mode === "forgot" && (
         <div>
-          <p style={{fontSize:"4vw",color:"purple"}}>Forgot Password</p>
-          <input type="password" placeholder="Enter your new password" style={{fontSize:"4vw"}} onChange={(e) => setResPass(e.target.value)} /><br /><br />
-          <button onClick={handleReset} style={{fontSize:"4vw"}}>Create new Password</button><br /><br />
-          <button onClick={() => setMode("signup")} style={{cursor:"pointer",fontSize:"4vw"}}>
+          <p style={{fontSize:"3vw",color:"purple"}}>Forgot Password</p>
+          <input type="password" placeholder="Enter your new password" style={{fontSize:"2vw"}} onChange={(e) => setResPass(e.target.value)} /><br /><br />
+          <button onClick={handleReset} style={{fontSize:"3vw"}}>Create new Password</button><br /><br />
+          <button onClick={() => setMode("signup")} style={{cursor:"pointer",fontSize:"3vw"}}>
             Back to Sign Up
           </button>
           
