@@ -41,10 +41,10 @@ const [password, setPassword] = useState("");
      <p style={{fontSize:"2vw"}}> Enter your Password here:</p>
       <input type="password"  placeholder="123...." onChange={(e) => setPassword(e.target.value)} style={{fontSize:"2vw"}} />
       <p style={{fontSize:"2vw"}}>  Don't have an account? 
-      <p  onClick={() => navigate("/auth")} style={{color:"blue",fontSize:"2vw", display:"inline"}}> Sign Up </p>
+      <p  onClick={() => navigate("/auth")} style={{color:"blue",fontSize:"3vw", display:"inline"}}> Sign Up </p>
       </p>
    
-       <button onClick={handleLogin} style={{width:"30%", height:"8vh", alignItems:"center",borderRadius:"20vh", backgroundColor:"blue", color:"white", fontSize: fontSize + "%"}}  >Login</button>
+       <button onClick={handleLogin} style={{width:"30%", height:"4vh", alignItems:"center",borderRadius:"20vh", backgroundColor:"blue", color:"white", fontSize: fontSize + "%"}}  >Login</button>
       </center>
     </div>
   );
