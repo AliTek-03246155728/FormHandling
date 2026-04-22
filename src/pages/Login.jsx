@@ -22,7 +22,7 @@ const [password, setPassword] = useState("");
       } else if (window.innerWidth <= 900) {
         setFontSize(24);
       } else {
-        setFontSize(60);
+        setFontSize(3);
       }
     };
 
@@ -44,7 +44,7 @@ const [password, setPassword] = useState("");
       <p  onClick={() => navigate("/auth")} style={{color:"blue",fontSize:"3vw", display:"inline"}}> Sign Up </p>
       </p>
    
-       <button onClick={handleLogin} style={{width:"30%", height:"4vh", alignItems:"center",borderRadius:"20vh", backgroundColor:"blue", color:"white", fontSize: fontSize + "vw"}}  >Login</button>
+       <button onClick={handleLogin} style={{width:"30%", height:"5vh", alignItems:"center",borderRadius:"20vh", backgroundColor:"blue", color:"white", fontSize: fontSize + "vw"}}  >Login</button>
       </center>
     </div>
   );
