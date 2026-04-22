@@ -13,13 +13,6 @@ const [password, setPassword] = useState("");
 
   navigate("/dashboard");
 };
-  
-
-    handleResize(); // run on load
-    window.addEventListener("resize", handleResize);
-
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
 
   return (
     <div>
