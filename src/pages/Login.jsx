@@ -19,7 +19,7 @@ const [password, setPassword] = useState("");
          
        <h2>Login</h2>
      <p style={{fontSize:"3vw"}}> Enter your Email here: </p> <input type="email"  placeholder="....@gmail.com" onChange={(e) => setEmail(e.target.value)} style={{fontSize:"2.5vw"}} />
-      <br />
+      
      <p style={{fontSize:"3vw"}}> Enter your Password here:</p>
       <input type="password"  placeholder="123...." onChange={(e) => setPassword(e.target.value)} style={{fontSize:"2.5vw"}} />
       <p style={{fontSize:"3vw"}}>  Don't have an account? 
