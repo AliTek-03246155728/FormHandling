@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 function Login() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -26,7 +26,7 @@ const [password, setPassword] = useState("");
       <p  onClick={() => navigate("/auth")} style={{color:"blue",fontSize:"3vw", display:"inline"}}> Sign Up </p>
       </p>
    
-       <button style={{width:"30%", height:"2vh", alignItems:"center",borderRadius:"20vh", backgroundColor:"blue", color:"white",fontSize:"100%"}}  >Login</button>
+       <button style={{width:"30%", height:"2vh", alignItems:"center",borderRadius:"20vh", backgroundColor:"blue", color:"white",fontSize:"3vw"}}  >Login</button>
       </center>
     </div>
   );
