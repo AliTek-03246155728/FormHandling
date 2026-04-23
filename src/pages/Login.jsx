@@ -26,7 +26,7 @@ const [password, setPassword] = useState("");
       <p  onClick={() => navigate("/auth")} style={{color:"blue",fontSize:"3vw", display:"inline"}}> Sign Up </p>
       </p>
    
-       <button style={{width:"30%", height:"2vh", alignItems:"center",borderRadius:"20vh", backgroundColor:"blue", color:"white",fontSize:"2rem"}}  >Login</button>
+       <button style={{width:"30%", height:"2vh", alignItems:"center",borderRadius:"20vh", backgroundColor:"blue", color:"white",fontSize:"100%"}}  >Login</button>
       </center>
     </div>
   );
