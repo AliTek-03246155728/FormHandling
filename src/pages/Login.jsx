@@ -15,8 +15,8 @@ const [password, setPassword] = useState("");
 };
 
   return (
-    <div>
-         <center>
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
+         
        <h2>Login</h2>
      <p style={{fontSize:"3vw"}}> Enter your Email here: </p> <input type="email"  placeholder="....@gmail.com" onChange={(e) => setEmail(e.target.value)} style={{fontSize:"2.5vw"}} />
       <br />
@@ -26,8 +26,8 @@ const [password, setPassword] = useState("");
       <p  onClick={() => navigate("/auth")} style={{color:"blue",fontSize:"3vw", display:"inline"}}> Sign Up </p>
       </p>
    
-       <button style={{ alignItems:"center",borderRadius:"20vh", backgroundColor:"blue", color:"white" , padding: "clamp(10px, 2vw, 16px) clamp(16px, 4vw, 32px)", fontSize: "clamp(14px, 2.5vw, 18px)",  cursor: "pointer",  whiteSpace: "nowrap"}} >Login</button>
-      </center>
+       <button onClick={handleLogin} style={{ alignItems:"center",borderRadius:"20vh", backgroundColor:"blue", color:"white" , padding: "clamp(10px, 2vw, 16px) clamp(16px, 4vw, 32px)", fontSize: "clamp(14px, 2.5vw, 18px)",  cursor: "pointer",  whiteSpace: "nowrap"}} >Login</button>
+      
     </div>
   );
 }
